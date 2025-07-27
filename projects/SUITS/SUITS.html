@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ANUSHKA PARIKH</title>  
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="style1.css"/>
+  <!--FONT-->
+    <link rel="stylesheet" href="https://use.typekit.net/npk8bon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--ROUND CIRCLE-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0&icon_names=brightness_1" />
+  <!--JAVASCRIPT-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  </head>
+</head>
+<body>
+<!--Global Content-->
+
+<div id="modal" class="modal" onclick="closeModal()">
+    <div class="modal-content">
+      <img id="expandedImg" alt="Expanded Image">
+    </div>
+</div>
+
+<!--Navbar-->
+<div id="navbar">
+    <a href="../../index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="#projects">Work</a>
+        <a href="play.html">Play</a>
+        <a href="https://drive.google.com/file/d/1AT4Bwe-48e_uljBXBd6ZDxO2BJwk3Kyw/view?usp=sharing">Resume</a>
+</div>
+
+<div id="hero-content-external">
+    <div id="top-left">
+     <!--HERO-->
+            <div id="record-icon"></div>
+                <p class="text"> Anushka Parikh is pursuing a BFA in Graphic Design at the
+                    <a class="link" href="https://www.risd.edu/" target="_blank">Rhode Island School of Design</a>.
+                </p>
+        </div>
+    </div>
+</div>
+
+<!-- Non-global Content-->
+
+<div class="case-study">
+    <video class="image-hero" preload="auto" alt="NASA SUITS - cover" width="100%" autoplay loop muted playsinline style="aspect-ratio: 16/9; object-fit: cover;">
+        <source src="SUITS.mp4" type="video/mp4" />
+    </video> 
+    <div class="case-study-intro">
+        <h1>2025 SUITS NASA Competition</h1>
+        <div class="case-study-intro-columns">
+            <div><span class="case-study-small">Summary</span>
+                <p><i>2025 SUITS NASA Competition</i> involves a group of designers and developers collaborating to represent schools in order to create an interface suitable for EV Tasks on the Moon.</p>
+            </div>
+            <div><span class="case-study-small">Type</span>Web Design</div>
+            <div><span class="case-study-small">Team</span>Anushka Parikh</div>
+        </div>
+    </div>
+
+    <div class="case-study-text">
+        <h2>Personal Contributions</h2>
+        <div>
+            <p>I worked on a team of three designers, including me, Tina Zhou, and Annabel Gillespie. We collaborated together to develop the visual look which mirrored the typographic identity created by the Identity Team. They conceptualized the navigation while I executed it with Javascript (navigation was automatically populated!). I developed the JSON to populate the content, image modals, and mobile views. I also created a cool function to download your own poster.</p>
+            <p>Installation photos by Luisa Heindl.</p>
+        </div>
+    </div>
+    <div class="case-study-2-column">
+        <img onclick="openModal(this)" src="images/for-reference-only/PhamLucy_For_Reference_Only_10.png">
+        <img onclick="openModal(this)" src="images/for-reference-only/PhamLucy_For_Reference_Only_11.png">
+    </div>
+    <div class="case-study-text">
+        <h2>Index of Titles, Names, and Mediums</h2>
+        <div>The identity's typographic concept centered around the idea of reference material, hence the use of superscripts. The user can browse via titles, names, and mediums. Or, they can visit the image gallery which contains all of the works.</div>
+    </div>
+    <img onclick="openModal(this)" class="image-standard" src="images/for-reference-only/PhamLucy_For_Reference_Only_2.png">
+    <div class="case-study-text">
+        <h2>Download Your Own Reference Poster</h2>
+        <div>One of my favorite parts of the website is the ability to download your own poster! As the user clicks on different titles of works, it gets added to a stack in the corner. Clicking on the stack opens the user's "reference list." They can add and remove posters as they please in order to create a custom reference poster.</div>
+    </div>
+    <img onclick="openModal(this)" class="image-standard" src="images/for-reference-only/PhamLucy_For_Reference_Only_2.gif">
+    <div class="case-study-2-column">
+        <img onclick="openModal(this)" src="images/for-reference-only/PhamLucy_For_Reference_Only_8.png">
+        <img onclick="openModal(this)" src="images/for-reference-only/PhamLucy_For_Reference_Only_9.png">
+    </div>
+    <img onclick="openModal(this)" class="image-standard" src="images/for-reference-only/PhamLucy_For_Reference_Only_5.png">
+    <div class="case-study-text">
+        <h2>Image Modals</h2>
+        <div>
+            <p>When users click on titles, authors, or mediums, different variations of the image modal appears. For instance, if the user clicks on a title, a single image for that work appears. If a user clicks on an author, an image for all of the works that the author submitted for the exhibition appears. If a medium is clicked, a grid for all of the works in that category appears.</p>
+            <p>Below is the modal that appears when a user clicks on an author's name, who has two works in the exhibition.</p>
+        </div>
+    </div>
+    <img onclick="openModal(this)" class="image-standard" src="images/for-reference-only/PhamLucy_For_Reference_Only_6.png">
+    <div class="case-study-text">
+        <p></p>
+        <div>Below is the modal that appears when a user clicks on a medium, showing all of the books in that exhibition.</div>
+    </div>
+    <img onclick="openModal(this)" class="image-standard" src="images/for-reference-only/PhamLucy_For_Reference_Only_7.png">
+    <div class="case-study-text">
+        <h2>A Mobile Friendly Site</h2>
+        <div>
+            <p>I also made the website more mobile-friendly while Tina Zhou made the website responsive for desktop. The biggest issue with the mobile version of the website was the circular "cursor" on the landing page because hover isn't enabled on mobile, but I was able to maintain the same aesthetic by animating the circle.</p>
+        </div>
+    </div>
+    <img onclick="openModal(this)" class="image-standard" src="images/for-reference-only/PhamLucy_For_Reference_Only_12.png">
+    <div class="case-study-text">
+        <h2>Additional Exhibition Documentation</h2>
+        <div><p>Below are additional images of the exhibition. Photos were taken by Luisa Heindl and Andrea Mato. More images will be added soon.</p></div>
+    </div>
+    <img onclick="openModal(this)" class="image-standard" src="images/for-reference-only/2025-MFA-Show-81.jpg">
+</div>
+
+<!-- Global Content-->
+<div id="footer">
+    <div id="footer-content">
+        <div>Email me: lucynpham@gmail.com</div>
+        <ul>
+            <a href="https://www.instagram.com/lucynguyenpham/" target="_blank"><li>Instagram</li></a>
+            <a href="https://linkedin.com/in/lucypham" target="_blank"><li>LinkedIn</li></a>
+        </ul>
+    </div>
+    <img src="images/lnp-2.svg">
+</div>
+
+<script src="js/tooltipmouse.js"></script>
+<script src="js/header.js"></script>
+<script src="js/darkmode.js"></script>
+<script src="js/filter.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/grid.js"></script>
+<script src="js/carousel.js"></script>
+</body>
+</html>

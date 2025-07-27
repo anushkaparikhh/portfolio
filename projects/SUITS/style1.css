@@ -250,10 +250,9 @@ p {
     padding: 5px 10px;
 }
 .lnp {
-    position: absolute;
-    margin-top: -200px;
+    /*position: absolute;*/
+    margin-top: -30px;
     width: 100%;
-    margin-right: 23px;
     cursor: pointer;
     margin-bottom: 0px;
     /*left: 50%;
@@ -263,7 +262,7 @@ p {
     transition: all 0.5s ease-in-out;
 }
 .lnp:hover {
-    content: url('images/');
+    content: url('images/lnp-2.svg');
     opacity: 1;
 }
 .draggable {
@@ -877,7 +876,7 @@ Sticky Notes
 /* Play */
 #play {
     column-count: 3;
-    column-gap: 8px;
+    column-gap: 20px;
     width:100%;
     max-width: 100%;
     box-sizing: border-box;
