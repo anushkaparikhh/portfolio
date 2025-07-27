@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ANUSHKA PARIKH</title>  
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="css/style1.css"/>
+  <!--FONT-->
+    <link rel="stylesheet" href="https://use.typekit.net/npk8bon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--ROUND CIRCLE-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0&icon_names=brightness_1" />
+  <!--JAVASCRIPT-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  </head>
+</head>
+<body>
+    <!--Global Content-->
+
+    <div id="modal" class="modal" onclick="closeModal()">
+        <div class="modal-content">
+          <img id="expandedImg" alt="Expanded Image">
+        </div>
+    </div>
+
+    <!--Navbar-->
+    <div id="navbar">
+        <a href="/">Home</a>
+        <a href="about.html">About</a>
+        <a href="/#projects">Work</a>
+        <a href="play.html">Play</a>
+        <a href="https://drive.google.com/file/d/1AT4Bwe-48e_uljBXBd6ZDxO2BJwk3Kyw/view?usp=sharing">Resume</a>
+    </div>
+
+    <div id="hero-content-external">
+        <div id="top-left">
+            <div id="record-icon"></div>
+            <p class="text"> Anushka Parikh is pursuing a BFA in Graphic Design at the
+                <a class="link" href="https://www.risd.edu/" target="_blank">Rhode Island School of Design</a>.
+            </p>
+        </div>
+    </div>
+
+    <!-- Non-global Content-->
+
+    <h1 style="text-align: center;">Play</h1>
+    <p style="font-size:16px;text-align:center;margin-left:auto;margin-right:auto;max-width:500px;padding: 0px 20px;">Some things I've made for fun recently or perhaps in a previous life...</p>
+    <div id="play">
+        <div>
+            <img onclick="openModal(this)" alt="Rahut Logo" src="images/play/rahut.png">
+            <p>Rahut Logo Design</p>
+        </div>
+        <div>
+            <img onclick="openModal(this)" alt="Pick Your Future Mockup Menu" src="images/play/menu.png">
+            <p>Pick Your Future Menu Design</p>
+        </div>
+        <div>
+          <img onclick="openModal(this)" alt="Image of -121.815225, 5.877006" src="images/play/121.jpg">
+          <p>-121.815225, 5.877006</p>
+        </div>
+        <div>
+            <video onclick="openModal(this)" width="100%" height="auto" autoplay muted loop>
+                <source src="images/play/notations.mp4" type="video/mp4">
+              </video>
+            <p>Notations...a collection of graphic scores.</p>
+        </div>
+       
+    </div>
+    
+    <!-- Global Content-->
+    <div id="footer">
+        <div id="footer-content">
+            <div>Email me: aparik01@risd.edu</div>
+            <ul>
+                <a href="https://www.instagram.com/anushkaa.parikh/" target="_blank"><li>Instagram</li></a>
+                <a href="https://www.linkedin.com/in/anushka-parikh-015a40300/" target="_blank"><li>LinkedIn</li></a>
+            </ul>
+        </div>
+    </div>
+
+<!--JS-->    
+<script src="js/tooltipmouse.js"></script>
+<script src="js/header.js"></script>
+<script src="js/darkmode.js"></script>
+<script src="js/filter.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/grid.js"></script>
+<script src="js/carousel.js"></script>
+</body>
+</html>
