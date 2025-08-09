@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ANUSHKA PARIKH</title>  
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="style1.css"/>
+  <!--FONT-->
+    <link rel="stylesheet" href="https://use.typekit.net/npk8bon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--ROUND CIRCLE-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0&icon_names=brightness_1" />
+  <!--JAVASCRIPT-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  </head>
+</head>
+<body>
+<!--Global Content-->
+
+<div id="modal" class="modal" onclick="closeModal()">
+    <div class="modal-content">
+      <img id="expandedImg" alt="Expanded Image">
+    </div>
+</div>
+
+<!--Navbar-->
+<div id="navbar">
+    <a href="../../index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="#projects">Work</a>
+        <a href="play.html">Play</a>
+        <a href="https://drive.google.com/file/d/1AT4Bwe-48e_uljBXBd6ZDxO2BJwk3Kyw/view?usp=sharing">Resume</a>
+</div>
+
+<div id="hero-content-external">
+    <div id="top-left">
+     <!--HERO-->
+            <div id="record-icon"></div>
+                <p class="text"> Anushka Parikh is pursuing a BFA in Graphic Design at the
+                    <a class="link" href="https://www.risd.edu/" target="_blank">Rhode Island School of Design</a>.
+                </p>
+        </div>
+    </div>
+</div>
+
+<!-- Non-global Content-->
+
+<div class="case-study">
+    <img class="image-hero" src="sensescape.gif">
+    <div class="case-study-intro">
+        <h1>Sensescape X Microsoft</h1>
+        <div class="case-study-intro-columns">
+            <div><span class="case-study-small">Summary</span>
+                <p>
+                Sensecape X Microsoft is an immersive conference hosted at 
+                <a class="link" href="https://www.microsoft.com/en-us/garage/" target="_blank">Microsoft Garage in NYC↗</a>
+                that gathers artists, designers, technologists, and thinkers reimagining interaction across disciplines, bodies, and realities.<br>“Beyond Boundaries: Artifact of the Future,” invites you to engage with works that resist categorization—hybrid objects, speculative systems, and sensory architectures that stretch the limits of medium, tool, and touch. These are not just experiments; they are artifacts of tomorrow’s archive.<br>The branding emulates this inquisive quality, blending together the mechanism imagery of nature and creative technology, and centers the intersection of innovation and archive. It is applied to exhibition design, VR website, social media design, and event ephemera.
+                <i>[5 months]</i>  
+                </p>
+            </div>
+            <div><span class="case-study-small">Type</span>Brand Identity<br>Poster Design</div>
+            <div><span class="case-study-small">Design Team</span>Anushka Parikh(me), Manna Patiparnprechavut, Erin Xi, Elaine Zhang, Neat Rodanant, Andrew Pak, Caleb Wu, and Miko Molokai. </div>
+        </div>
+    </div>
+
+    <div class="case-study-text">
+        <!--PERSONAL CONTRIBUTIONS-->
+        <h2>Personal Contributions</h2>
+        <div>
+            <p>My contribution to the team was ideating for a cohesive brand desingn and creating posters for open call to exhibit work.</p>
+            <p>Here is an example of one of the posters I designed using Andrew Pak's 3D design assets.</p>
+        </div>
+    </div>
+    <img onclick="openModal(this)" class="image-standard" src="images/call1.png">
+    
+    <!--BRAND IDENTITY-->
+    <div class="case-study-text">
+        <h2>Brand Identity</h2>
+        <!--<div> <p></p></div>-->
+    </div>
+    <div class="case-study-2-column">
+        <img onclick="openModal(this)" class="image-standard" src="images/logo.png">
+        <img onclick="openModal(this)" class="image-standard" src="images/font.png">
+    </div>
+    <img onclick="openModal(this)" class="image-standard" src="images/palette.png">
+     
+    <!--POSTERS-->
+    <div class="case-study-text">
+        <h2>Posters</h2>
+        <!--<div></div>-->
+    </div>
+    <div class="case-study-2-column">
+        <img onclick="openModal(this)" class="image-standard" src="images/call21.png">
+        <img onclick="openModal(this)" class="image-standard" src="images/call22.png">
+    </div>
+    <img onclick="openModal(this)" class="image-standard" src="images/call31.png">
+    <div class="case-study-3-column">
+        <img onclick="openModal(this)" class="image-standard" src="images/post1.png">
+        <img onclick="openModal(this)" class="image-standard" src="images/post2.png">
+        <img onclick="openModal(this)" class="image-standard" src="images/post3.png">
+    </div>
+    <!--WEBSITE-->
+    <div class="case-study-text">
+        <h2>Website</h2>
+        <!--<div> <p></p></div>-->
+    </div>
+    <video onclick="openModal(this)" class="image-standard" preload="auto" alt="NASA SUITS - cover" width="100%" autoplay loop muted playsinline style="aspect-ratio: 16/9; object-fit: cover;">
+        <source src="images/website.mp4" type="video/mp4"/>
+    </video>    
+    
+    <!--ADDITIONAL EXHIBITION DESIGN-->
+    <div class="case-study-text">
+        <h2>Additional Exhibition Design</h2>
+    </div>
+    <img onclick="openModal(this)" class="image-standard" src="images/brochure.png">
+    <div class="case-study-2-column">
+        <img onclick="openModal(this)" class="image-standard" src="images/didactics.png">
+        <img onclick="openModal(this)" class="image-standard" src="images/thumbnails.png">
+    </div>   
+    <img onclick="openModal(this)" class="image-standard" src="images/backdrop.png">
+
+    <!--THE EVENT-->
+    <div class="case-study-text">
+        <h2>The Event</h2>
+    </div>
+    <img onclick="openModal(this)" class="image-standard" src="images/pic.JPG">
+        
+    <!--WHAT I LEARNED
+    <div class="case-study-text">
+        <h2>Skills I Took From S.U.I.T.S.</h2>
+        <div>
+            <p></p>
+        </div>
+        <img onclick="openModal(this)" class="image-standard" src="images/">
+    </div>-->
+</div>
+<!-- Global Content-->
+<div id="footer">
+    <div id="footer-content">
+        <div>Email me: aparik01@risd.edu</div>
+        <ul>
+            
+        </ul>
+    </div>
+    <img src="images/lnp-2.svg">
+</div>
+
+<script src="js/tooltipmouse.js"></script>
+<script src="js/header.js"></script>
+<script src="js/darkmode.js"></script>
+<script src="js/filter.js"></script>
+<script src="../../js/modal.js"></script>
+<script src="js/grid.js"></script>
+<script src="js/carousel.js"></script>
+</body>
+</html>

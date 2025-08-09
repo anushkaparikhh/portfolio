@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ANUSHKA PARIKH</title>  
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="style1.css"/>
+  <!--FONT-->
+    <link rel="stylesheet" href="https://use.typekit.net/npk8bon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--ROUND CIRCLE-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0&icon_names=brightness_1" />
+  <!--JAVASCRIPT-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  </head>
+</head>
+<body>
+<!--Global Content-->
+
+<div id="modal" class="modal" onclick="closeModal()">
+    <div class="modal-content">
+      <img id="expandedImg" alt="Expanded Image">
+    </div>
+</div>
+
+<!--Navbar-->
+<div id="navbar">
+    <a href="../../index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="#projects">Work</a>
+        <a href="play.html">Play</a>
+        <a href="https://drive.google.com/file/d/1AT4Bwe-48e_uljBXBd6ZDxO2BJwk3Kyw/view?usp=sharing">Resume</a>
+</div>
+
+<div id="hero-content-external">
+    <div id="top-left">
+     <!--HERO-->
+            <div id="record-icon"></div>
+                <p class="text"> Anushka Parikh is pursuing a BFA in Graphic Design at the
+                    <a class="link" href="https://www.risd.edu/" target="_blank">Rhode Island School of Design</a>.
+                </p>
+        </div>
+    </div>
+</div>
+
+<!-- Non-global Content-->
+
+<div class="case-study">
+    <img class="image-hero" src="images/cocreate.png">
+    <div class="case-study-intro">
+        <h1>CoCreate</h1>
+        <div class="case-study-intro-columns">
+            <div><span class="case-study-small">Summary</span>
+                <p>
+                <a class="link" href="https://www.cocreate.careers/" target="_blank">CoCreate↗</a>
+                is a new model for how startups and creative talent grow together. We believe ambition should matter more than experience and that the best products are built through collaboration, not gatekeeping.
+                <i>[1.5 months]</i>  
+                </p>
+            </div>
+            <div><span class="case-study-small">Type</span>Brand Identity</div>
+        </div>
+    </div>
+    
+    <!--LOGO-->
+    <div class="case-study-text">
+        <h2>LOGO</h2>
+        <div> 
+            <p>Cocreate was designed with the intent to build a parent brand for Design Buddies and UXGO. This meant that the brand had to compliment both established brands while still maintaining a independent identity. Through this brand design, I decided to experiment with how the letters "co" can be designed to function as a visual and written logo.</p>
+        </div>
+    </div>
+    <div class="case-study-2-column">
+        <img onclick="openModal(this)" class="image-standard" src="images/logomark.png">
+        <img onclick="openModal(this)" class="image-standard" src="images/logo.png">
+    </div>
+    <img onclick="openModal(this)" class="image-standard" src="images/variations.png">
+     
+    <!--SUPERGRAPHICS-->
+    <div class="case-study-text">
+        <h2>Supergraphics</h2>
+        <!--<div></div>-->
+    </div>
+    <img onclick="openModal(this)" class="image-standard" src="images/supergraphics.png">   
+    
+    <!--COLOR-->
+    <div class="case-study-text">
+        <h2>Color</h2>
+    </div>
+    <img onclick="openModal(this)" class="image-standard" src="images/color1.png">
+    <img onclick="openModal(this)" class="image-standard" src="images/color2.png">
+
+    <!--TYPOGRAPHY-->
+    <div class="case-study-text">
+        <h2>Typography</h2>
+    </div>
+    <img onclick="openModal(this)" class="image-standard" src="images/type.png">
+    
+    <!--TEXTURE-->
+    <div class="case-study-text">
+        <h2>Texture</h2>
+    </div>
+    <img onclick="openModal(this)" class="image-standard" src="images/texture.png">
+    
+    <!--ADDITIONAL MOCKUPS-->
+    <div class="case-study-text">
+        <h2>Additional Mockups</h2>
+    </div>
+    <img onclick="openModal(this)" class="image-standard" src="images/hood.png">
+    <img onclick="openModal(this)" class="image-standard" src="images/tag.png">
+    <img onclick="openModal(this)" class="image-standard" src="images/shirt.png">
+
+    <!--COMBINED USAGE-->
+    <div class="case-study-text">
+        <h2>Combined Usage</h2>
+    </div>
+    <div class="case-study-2-column">
+        <img onclick="openModal(this)" class="image-standard" src="images/cu.png">
+        <img onclick="openModal(this)" class="image-standard" src="images/cu2.png">
+    </div>
+    <img onclick="openModal(this)" class="image-standard" src="images/cu3.png">
+
+     <!--WEBSITE-->
+     <div class="case-study-text">
+        <h2>Website</h2>
+    </div>
+
+    <!--WHAT I LEARNED
+    <div class="case-study-text">
+        <h2>Skills I Took From S.U.I.T.S.</h2>
+        <div>
+            <p></p>
+        </div>
+        <img onclick="openModal(this)" class="image-standard" src="images/">
+    </div>-->
+</div>
+<!-- Global Content-->
+<div id="footer">
+    <div id="footer-content">
+        <div>Email me: aparik01@risd.edu</div>
+        <ul>
+            
+        </ul>
+    </div>
+    <img src="images/lnp-2.svg">
+</div>
+
+<script src="js/tooltipmouse.js"></script>
+<script src="js/header.js"></script>
+<script src="js/darkmode.js"></script>
+<script src="js/filter.js"></script>
+<script src="../../js/modal.js"></script>
+<script src="js/grid.js"></script>
+<script src="js/carousel.js"></script>
+</body>
+</html>
