@@ -815,7 +815,6 @@ Sticky Notes
     /*max-width: calc(100%);*/
     width: 100%;
     height: auto; 
-    border-radius: 10px;
     object-fit: contain;
     cursor: pointer;
 }
@@ -829,7 +828,6 @@ Sticky Notes
     flex: 1;
     max-width: calc(100%); 
     height: auto; 
-    border-radius: 10px;
     object-fit: contain;
     cursor: pointer;
 }
