@@ -10,14 +10,14 @@
     url("../fonts/SpringScriptVF.woff2") format("woff2-variations");
 }
 
-/* Color */
+/*COLOR*/
 :root {
     --borders: #dedede;
   }
   html {
     scroll-behavior: smooth;
   }
-/* Basic Typography */
+/*TYPE*/
 body {
     padding: 0;
     margin: 0;
@@ -53,22 +53,23 @@ p {
     margin-bottom: 20px;
 }
 
-/**/
+/*HERO*/
 #hero {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh;
+    height: 10vh;
     width: 100%;
     background-color: #FFFFFF;
     padding: 20px;
     box-sizing: border-box;
 }
+
 #mobile-hero-text {
     display: none;
 }
 
-/* Hero Image */
+/*HERO IMAGE*/
 #hero-image {
     position: absolute;
     top:0px;
@@ -86,7 +87,6 @@ p {
     position: relative;
     width: 40vw;
     top:-20px;
-    border-radius: 10px;
     z-index:1001;
     cursor: pointer;
     pointer-events: all !important;
@@ -166,7 +166,7 @@ p {
     border-radius: 50%;
     flex-shrink: 0;
     animation: blink 4s ease infinite;
-    margin-top:3.5px;
+    margin-top:5px;
 }
 .tooltip {
     position:absolute;
@@ -308,6 +308,7 @@ p {
     position: fixed;
     border-radius: 100px;
     background-color: #b6b6b631;
+    outline:1px solid black;
     top: 15px;
     left: 50%;
     transform: translate(-50%);
@@ -572,6 +573,7 @@ input:checked + .toggle-slider:before {
     aspect-ratio: 16 / 9;
     object-fit: cover;
 }
+
 #container-grid > .project img {
     width: 100%;           
     height: auto;            
@@ -622,7 +624,7 @@ PROJECT
 
 .project-details {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 3fr 1fr;
     gap: 20px;
 }
 .project-details a {
@@ -634,6 +636,8 @@ PROJECT
     list-style: none;
     font-size: 12px;
     line-height: 14px;
+    text-align: right; /* right-aligns the text */
+    margin-left: auto;
 }
 .project-title {
     font-size: 30px;
@@ -642,6 +646,7 @@ PROJECT
     text-decoration: none;
 
     position: relative;
+
 
     background: linear-gradient(currentColor, currentColor) bottom / 0 0.75px no-repeat;
     transition: background-size 0.5s;
@@ -714,8 +719,8 @@ Sticky Notes
 #footer {
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    gap: 200px;
+    padding: 200px;
+    gap: 50px;
     /*background-color: #EFEFEF;*/
     background-color: #FFFFFF;
 }
@@ -1211,3 +1216,19 @@ Sticky Notes
     /* filter:grayscale() brightness(0.5); */
     cursor:not-allowed;
 }
+
+.cover {
+    display: block; /* prevents inline spacing */
+    margin-bottom: 0;
+  }
+
+/* make imgs and videos behave identically */
+.project img,
+.project video,
+.cover {
+  margin: 0;        /* or margin-bottom:10px if you want that space for all media */
+  padding: 0;
+  line-height: 0;
+  vertical-align: top;
+}
+
