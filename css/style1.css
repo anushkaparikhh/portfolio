@@ -306,14 +306,13 @@ p {
     flex-direction: row;
     gap: 10px;
     position: fixed;
-    border-radius: 100px;
-    background-color: #b6b6b631;
-    outline:1px solid black;
     top: 15px;
     left: 50%;
     transform: translate(-50%);
     padding: 2px 2px;
-    backdrop-filter: blur(5px);
+    background-color: #ffffff50;
+    border-radius: 100px;
+    /*backdrop-filter: blur(5px);*/
     cursor: pointer;
     z-index:1000;
     text-wrap: nowrap;
@@ -327,7 +326,9 @@ p {
 }
 #navbar a:hover, #navbar span:hover {
     /*text-decoration: underline;*/
-    background-color: #b6b6b68c;
+    background-color: #ffffff;
+    outline:1px solid black;
+    transition: background-color 0.25s;
 }
 
 /*
@@ -721,7 +722,7 @@ Sticky Notes
 #footer {
     display: flex;
     flex-direction: column;
-    padding: 200px;
+    padding: 50px;
     gap: 50px;
     /*background-color: #EFEFEF;*/
     background-color: #FFFFFF;
