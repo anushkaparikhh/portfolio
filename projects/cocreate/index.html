@@ -14,7 +14,7 @@
 <!--JAVASCRIPT-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-<link rel="icon" type="image/x-icon" href="../images/icons/dot.png">
+<link rel="icon" type="image/x-icon" href="../../images/icons/dot.png">
 </head>
 <div class="container">
     <div class="container">
@@ -22,11 +22,11 @@
         <div class="header">
             <div id="record-icon"></div>
             <div class="bio">
-                <a href="../index1.html" class="name">Anushka Parikh</a><span class="details"> is a <span class="skill-text">graphic designer</span> 
+                <a href="../../index.html" class="name">Anushka Parikh</a><span class="details"> is a <span class="skill-text">graphic designer</span> 
                 <div class="sub"> Pursuing a BFA in Graphic Design and a Concentration in <br>Computation at the <a class="link" href="https://www.risd.edu/" target="_blank">Rhode Island School of Design</a>. Her work <br>largely revolves around interaction, accessible design,<br> research, & brand identities.</span></div>
             </div>
-            <div class="info"><a href="../info/">Info</a></div>
-            <div class="archive"><a href="../archive/">Archive</a></div>
+            <div class="info"><a href="../../info/">Info</a></div>
+            <div class="archive"><a href="../../archive/">Archive</a></div>
         </div>
 
     <div id="top-header"></div>
@@ -120,39 +120,14 @@
 </div>
 <div class="footer"></div>
 
-<script>
-    // Select all videos with the 'sound' class
-    const soundVideos = document.querySelectorAll('video.sound');
-    
-    soundVideos.forEach(video => {
-        const container = video.closest('.video-sound-container');
-        const label = container.querySelector('.sound-label');
-        
-        // Unmute on hover
-        container.addEventListener('mouseenter', function() {
-            video.muted = false;
-            label.style.opacity = '0';
-        });
-
-        const randomDegree = Math.random() * 10 - 5; 
-        label.style.transform = `rotate(${randomDegree}deg)`;
-        
-        // Mute on mouse leave
-        container.addEventListener('mouseleave', function() {
-            video.muted = true;
-            label.style.opacity = '1';
-        });
-    });
-</script>
-
-<script src="../js/hover.js"></script>
-<script src="../js/tooltipmouse.js"></script>
-<script src="../js/header.js"></script>
-<script src="../js/darkmode.js"></script>
-<script src="../js/filter.js"></script>
-<script src="../js/modal.js"></script>
-<script src="../js/verticalgrid.js"></script>
-<script src="../js/carousel.js"></script>
-<!--<script src="../js/pixel.js"></script>-->
+<script src="../../js/hover.js"></script>
+<script src="../../js/tooltipmouse.js"></script>
+<script src="../../js/header.js"></script>
+<script src="../../js/darkmode.js"></script>
+<script src="../../js/filter.js"></script>
+<script src="../../js/modal.js"></script>
+<script src="../../js/verticalgrid.js"></script>
+<script src="../../js/carousel.js"></script>
+<!--<script src="../../js/pixel.js"></script>-->
 </body>
 </html>
