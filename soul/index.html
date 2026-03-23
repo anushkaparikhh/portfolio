@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+  <title>Anushka Parikh</title>  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" href="style2.css" />
+<!--FONT-->
+  <link rel="stylesheet" href="https://use.typekit.net/npk8bon.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--ROUND CIRCLE-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0&icon_names=brightness_1" />
+<!--JAVASCRIPT-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+<link rel="icon" type="image/x-icon" href="images/icons/dot.png">
+
+</head>
+<div class="container">
+    <div class="container">
+        
+        <div class="header">
+            <div id="record-icon"></div>
+            <div class="bio">
+                <a href="../index1.html" class="name">Anushka Parikh</a><span class="details"> is a <span class="skill-text">graphic designer</span> 
+                <div class="sub"> Pursuing a BFA in Graphic Design and a Concentration in <br>Computation at the <a class="link" href="https://www.risd.edu/" target="_blank">Rhode Island School of Design</a>. Her work <br>largely revolves around interaction, accessible design,<br> research, & brand identities.</span></div>
+            </div>
+            <div class="info"><a href="../info/">Info</a></div>
+            <div class="archive"><a href="../archive/">Archive</a></div>
+        </div>
+
+    <div id="top-header"></div>
+
+<div class="grid-container">
+    <div class="grid-column">
+        <div class="grid-item information">
+       <a href=""><span class="title">
+        Better World X Design Soul Conference 
+    </span></a><br>
+        <div class="subinfo">
+        <span class="subtitle"> (personal project) website design + 3D modeling + package design<br></span>
+        <div class="time">
+            In → Fall 2023<br>
+        </div>
+        <p>
+           Soul is a conference hosted by Better World annually with a different theme each year. The 2025 conference gathered speakers to discuss interdisciplinary practices in design and their relation to the <i>soul</i>. 
+        <br> <br>
+       As part of the graphics and web team, I was tasked with the designing the conference website, merchandise, and marketing materials to reach out to sponsors and speakers.
+         </div>
+        </div>
+    </div>
+
+
+    <div class="grid-column">
+        <div class="grid-item scroll">
+            <div class="full first">
+              <img src="images/poster.jpg">
+            </div>
+            <div class="full first">
+                <div class="two">
+                    <img src="images/speaker1.jpg">
+                    <img src="images/speaker2.jpg">
+                </div>     
+            </div>
+            <div class="full first">
+                <div class="two">
+                    <img src="images/launch1.jpg">
+                    <img src="images/launch2.jpg">
+                </div>     
+            </div>
+            <div class="full first">
+                <img src="images/kit.png">
+            </div>
+            <div class="full first">
+                <img src="images/shirt.JPG">
+            </div>
+            <div class="full first">
+                <div class="two">
+                    <img src="images/party.jpg">
+                    <img src="images/party1.JPG">
+                </div>     
+            </div>
+
+        </div>
+    </div>
+</div>
+    
+
+<div class="copyright">
+    <span id="copy">© Anushka Parikh 2026 [aparik01@risd.edu]</span>
+</div>
+<div class="footer"></div>
+
+<script>
+    // Select all videos with the 'sound' class
+    const soundVideos = document.querySelectorAll('video.sound');
+    
+    soundVideos.forEach(video => {
+        const container = video.closest('.video-sound-container');
+        const label = container.querySelector('.sound-label');
+        
+        // Unmute on hover
+        container.addEventListener('mouseenter', function() {
+            video.muted = false;
+            label.style.opacity = '0';
+        });
+
+        const randomDegree = Math.random() * 10 - 5; 
+        label.style.transform = `rotate(${randomDegree}deg)`;
+        
+        // Mute on mouse leave
+        container.addEventListener('mouseleave', function() {
+            video.muted = true;
+            label.style.opacity = '1';
+        });
+    });
+</script>
+
+<script src="../js/hover.js"></script>
+<script src="../js/tooltipmouse.js"></script>
+<script src="../js/header.js"></script>
+<script src="../js/darkmode.js"></script>
+<script src="../js/filter.js"></script>
+<script src="../js/modal.js"></script>
+<script src="../js/verticalgrid.js"></script>
+<script src="../js/carousel.js"></script>
+<!--<script src="../js/pixel.js"></script>-->
+</body>
+</html>

@@ -20,3 +20,17 @@ document.querySelectorAll('.carousel').forEach(carousel => {
         updateCarousel();
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const FRAME_RATE = 150; // ms between frames
+
+  document.querySelectorAll(".gif-swap img").forEach(img => {
+    const frames = img.dataset.frames.split(",");
+    let frame = 0;
+
+    setInterval(() => {
+      frame = (frame + 1) % frames.length;
+      img.src = frames[frame];
+    }, FRAME_RATE);
+  });
+});

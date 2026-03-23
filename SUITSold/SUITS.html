@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Anushka Parikh</title>  
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="style1.css"/>
+  <!--FONT-->
+    <link rel="stylesheet" href="https://use.typekit.net/npk8bon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--ROUND CIRCLE-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0&icon_names=brightness_1" />
+  <!--JAVASCRIPT-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  </head>
+</head>
+<body>
+<!--Global Content-->
+
+<div id="modal" class="modal" onclick="closeModal()">
+    <div class="modal-content">
+      <img id="expandedImg" alt="Expanded Image">
+    </div>
+</div>
+
+<!--Navbar-->
+<div id="navbar">
+    <a href="../../index.html">Home</a>
+        <a href="../../about.html">About</a>
+        <a href="../../../portfolio/#projects">Work</a>
+        <a href="../../play.html">Play</a>
+        <a href="https://drive.google.com/file/d/1AT4Bwe-48e_uljBXBd6ZDxO2BJwk3Kyw/view?usp=sharing">Resume</a>
+</div>
+
+<div id="hero-content-external">
+    <div id="top-left">
+        <div id="record-icon"></div>
+        <p class="text"><i>anushka parikh</i> <br> is pursuing a BFA in Graphic Design at the
+            <a class="link" href="https://www.risd.edu/" target="_blank">Rhode Island School of Design</a>.
+        </p>
+    </div>
+    <div id="top-right">
+        <span style="color: rgb(255, 33, 222);" class:="font-size:50px">✣</span>
+        <a href="mailto:aparik01@risd.edu" rel="mailto">email</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span style="color: rgb(140, 33, 255);" class:="font-size:50px">✱</span>
+        <a class="link" href="https://www.instagram.com/anushkaa.parikh/" target="_blank">insta<!--<i class="fa fa-instagram" aria-hidden="true" style="font-size:24px;"></i>--></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <!--<a class="link" href="mailto:aparik01@risd.edu" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true" style="font-size:24px;"></i></a>-->
+        <span style="color: rgb(255, 33, 33);" class:="font-size:50px">⁂</span>
+        <a class="link" href="https://www.linkedin.com/in/anushka-parikh-015a40300/" target="_blank">linkedin<!--<i class="fa fa-linkedin-square" aria-hidden="true" style="font-size:24px;"></i>--></a>
+    </div>
+</div>
+
+<!-- Non-global Content-->
+
+<div class="case-study">
+    <video class="image-hero" preload="auto" alt="NASA SUITS - cover" width="100%" autoplay loop muted playsinline style="aspect-ratio: 16/9; object-fit: cover;">
+        <source src="SUITS.mp4" type="video/mp4" />
+    </video> 
+    <div class="case-study-intro">
+        <h1>2025 SUITS NASA Competition</h1>
+        <div class="case-study-intro-columns">
+            <div><span class="case-study-small">Summary</span>
+                <p><a class="link" href="https://www.nasa.gov/learning-resources/spacesuit-user-interface-technologies-for-students/" target="_blank">NASA Spacesuit User Interface Technologies for Students (NASA SUITS)↗</a>
+                
+                is a design challenge in which college students from across the country build user interface solutions for scientific exploration on the Moon. The interface that I helped develop came from a team of around 40 members from the Rhode Island School of Design as well as Brown University.
+                <i>[9 months]</i>  
+                </p>
+            </div>
+            <div><span class="case-study-small">Type</span>[FIGMA]User Interfaces</div>
+            <div><span class="case-study-small">Design Team</span>Anushka Parikh(me), Anika Gupta, Nina Chang, Anna Wang, Alayka Seputra, Waverly Huang, Anthony Zhang, Catherine Huang, Rumei Zha, Ariana Kim, Kian Park, Eldoris Cai, Zhenmi Tang, Sheryl Lee, Haoxuan Huang, Ava Maghsoodlou, Bennett Graff, Ella Goodman, Mia Haake, Olivia Petrarch, Jin Gu, Sandy Hong, Chahek Bansal </div>
+        </div>
+    </div>
+
+    <div class="case-study-text">
+        <!--PERSONAL CONTRIBUTIONS-->
+        <h2>Personal Contributions</h2>
+        <div>
+            <p>I worked with the design team to create brainstorm and narrow down a cohesive design system that would be the most effecient for astronaut use. Once a design system was solidified, our team was split into groups that focused on specific tasks to prototype the interface. My group mainly focused on geo sampling/terrain scanning and PR/EV task lists. I worked on a team of four designers, including me, Anika Gupta, Ava Maghsoodlou, and Bennett Graff. </p>
+            <p>Drafts for the design system.</p>
+        </div>
+    </div>
+    <img onclick="openModal(this)" class="image-standard" src="images/brainstorm.svg">
+    
+    <!--KEY POINTS OF INTEREST FOR GEO SAMPLING-->
+    <div class="case-study-text">
+        <h2>Key Points of Interest for Geological Sampling</h2>
+        <div> <p>Geological sampling consisted of four main tasks. The first was to organize PR and EV tasks in a way that would reveal all important information, such as the time appropriate for the task and location. Another key part of our role was to find a system to organize the tags given to each geological sample to effectively identify/categorize samples. Additionally, we had to find a way to communicate warnings between EV and PR tasks that would catch attention of the astronaut while also remaining informative.</p></div>
+    </div>
+    <img onclick="openModal(this)" class="image-standard" src="images/key.png">
+     
+    <!--ADDITIONAL PARTS OF THE UI (DRIVING THE PRESSURIZED ROVER, TERRAIN SCANS, TELEMETRY)-->
+    <div class="case-study-text">
+        <h2>Additional Parts of the UI</h2>
+        <div>These are other important aspects of the UI that the design team worked on. This includes driving the pressurized rover, terrain scans, and telemetric data</div>
+    </div>
+
+    <!--RESEARCH AND PROTOTYPING-->
+    <div class="case-study-text">
+        <h2>Research and Prototyping</h2>
+        <div> <p> Our research took much inspiration from previous years in NASA S.U.I.T.S. as well as navigation flows and Crew Dragon touchscreen displays. Google Maps also served as guidance of how to arrange tasks/directions to users. <br>
+        Thus, we collected all our research to create lo-fi designs that were developed after solidifying a design system to high-fi wireframes. </p></div>
+    </div>
+    <img onclick="openModal(this)" class="image-standard" src="images/pin.jpg">
+    <img onclick="openModal(this)" class="image-standard" src="images/hi-fi.png">
+        
+    <!--DESIGN PROTOTYPE-->
+    <div class="case-study-text">
+        <h2>Design Prototype</h2>
+        <div>
+            <p>Here is a collection of our hi-fi wireframes prior to testing.</p>
+        </div>
+    </div>
+    <img onclick="openModal(this)" class="image-standard" src="images/hi-fi1.png">
+    <img onclick="openModal(this)" class="image-standard" src="images/hi-fi2.png">
+    <img onclick="openModal(this)" class="image-standard" src="images/hi-fi3.png">  
+    <!--PROBLEMS/ISSUES-->
+    <div class="case-study-text">
+        <h2>Iterations</h2>
+        <div>
+            <p>Through testing, our team discovered that creating the vanishing of the warning signal confused the user as to whether the warning had been fixed or was still active. This meant a more thoughtful approach would be needed to address the state of a warning after being acknowledged, resolved, or unresolved.</p>
+        </div>
+    </div>
+    <div class="case-study-text">
+        <h2>Problem</h2>
+        <div>
+            <p>This creates confusion as to whether the warning has been resolved when switching between EV and PR tasks.</p>
+        </div>
+    </div>
+    <img onclick="openModal(this)" class="image-standard" src="images/warning.png">
+    <div class="case-study-text">
+        <h2>Solution</h2>
+        <div>
+            <p>This considers both states with the first image displaying the inital warning signal and the second image showing that the warnings have been read but are not resolved.</p>
+        </div>
+    </div>
+    <img onclick="openModal(this)" class="image-standard" src="images/fix.png">
+    <img onclick="openModal(this)" class="image-standard" src="images/fix2.png">
+        
+    <!--WHAT I LEARNED
+    <div class="case-study-text">
+        <h2>Skills I Took From S.U.I.T.S.</h2>
+        <div>
+            <p></p>
+        </div>
+        <img onclick="openModal(this)" class="image-standard" src="images/">
+    </div>-->
+</div>
+<!-- Global Content
+<div id="footer">
+    <div id="footer-content">
+        <div>Email me: aparik01@risd.edu</div>
+        <ul>
+            
+        </ul>
+    </div>-->
+</div>
+
+<script src="js/tooltipmouse.js"></script>
+<script src="js/header.js"></script>
+<script src="js/darkmode.js"></script>
+<script src="js/filter.js"></script>
+<script src="../../js/modal.js"></script>
+<script src="js/grid.js"></script>
+<script src="js/carousel.js"></script>
+</body>
+</html>
