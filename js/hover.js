@@ -128,21 +128,6 @@ document.addEventListener("DOMContentLoaded", () => {
     if (window.innerWidth >= 490) {
     window.addEventListener('scroll', handleScroll);
     }
-    
-    document.querySelectorAll('.thumbnail').forEach(thumbnail => {
-        const circle = thumbnail.querySelector('.circle');
-        const text = circle.querySelector('.text');
-    
-        thumbnail.addEventListener('mouseenter', () => {
-            // Calculate the width of the text
-            const textWidth = text.scrollWidth + 0; // Adding padding/border if needed
-            circle.style.width = `${textWidth}px`; // Set the circle width based on text
-        });
-    
-        thumbnail.addEventListener('mouseleave', () => {
-            circle.style.width = '1.8vw'; // Reset the width
-        });
-    });
 
 });
 

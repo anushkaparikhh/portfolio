@@ -23,26 +23,25 @@
         <div class="header">
             <div id="record-icon"></div>
             <div class="bio">
-                <a href="index.html" class="name">Anushka Parikh</a><span class="details"> is a <span class="skill-text">graphic designer</span> 
-                <div class="sub"> Pursuing a BFA in Graphic Design and a Concentration in <br>Computation at the <a class="link" href="https://www.risd.edu/" target="_blank">Rhode Island School of Design</a>. Her work <br>largely revolves around interaction, accessible design,<br> research, & brand identities.</span></div>
+                <a href="index.html" class="name">ANUSHKA PARIKH</a><span class="details"><span class="skill-text">graphic designer</span> 
             </div>
-            <div class="info"><a href="info/">Info</a></div>
-            <div class="archive"><a href="archive/">Archive</a></div>
+            <div class="sub bio"> Pursuing a BFA in Graphic Design and a Concentration in <br>Computation at the <a class="link" href="https://www.risd.edu/" target="_blank">Rhode Island School of Design</a>. Her work <br>largely revolves around interaction, accessible design,<br> research, & brand identities.</span></div>
+            <div class="info"><a href="info/">info</a></div>
+            <div class="archive"><a href="archive/">archive</a></div>
         </div>
 
         <div id="projects">
          <div id="control-bar">
             <div id="control-bar-left">
-                Filter:
-                <div onclick="filterProjects('filter-brand', this)" id="filterBrand" class="filter-button">Brand</div>
-                <div onclick="filterProjects('filter-uiux', this)" id="filterUIUX" class="filter-button">UI/UX</div>
-                <div onclick="filterProjects('filter-graphic', this)" id="filterGraphic" class="filter-button">Graphic Design</div>
-                <div onclick="filterProjects('filter-research', this)" id="filterResearch" class="filter-button">Research</div>
+                <div class="no-filter-button filter-label">[FILTER]</div>
+                <div onclick="filterProjects(this)" data-filter="filter-brand" id="filterBrand" class="filter-button">identity</div>
+                <div onclick="filterProjects(this)" data-filter="filter-uiux" id="filterUIUX" class="filter-button">ui/ux</div>
+                <div onclick="filterProjects(this)" data-filter="filter-graphic" id="filterGraphic" class="filter-button">graphic design</div>
+                <div onclick="filterProjects(this)" data-filter="filter-research" id="filterResearch" class="filter-button">research</div>
             </div>
             <div id="grid-toggle">
-                <img onclick="toggleOneGrid()" id="one-grid" src="images/icons/one-grid.png">
-                <img style="opacity:1;" onclick="toggleTwoGrid()" id="two-grid" src="images/icons/two-grid.png">
-            </div>
+            <img onclick="toggleGrid()" id="grid-toggle-btn" src="images/icons/two-grid.png">
+        </div>
         </div>
         
         <!-- Desktop/Tablet Grid Container -->
@@ -50,24 +49,24 @@
             <div class="grid-column">
                 <div class="project filter-uiux item">
                     <div class="grid-item" id="suits">
-                        <div class="one-grid-text">
-                            <h3>2025 NASA S.U.I.T.S.</h3>
+                            <div class="project-title">NASA S.U.I.T.S.</div>
+                            <div class="one-grid-text">
+                             <h3>web design</h3>
                             <p><a class="link" href="https://www.nasa.gov/learning-resources/spacesuit-user-interface-technologies-for-students/" target="_blank">NASA Spacesuit User Interface Technologies for Students (NASA SUITS)↗</a>
                             is a design challenge in which college students from across the country build user interface solutions for scientific exploration on the Moon. The interface that I helped develop came from a team of around 40 members from the Rhode Island School of Design as well as Brown University.
                             <i>[9 months]</i>  
                             </p>
-                            <p>(ui/ux)</p>
                         </div>
                         <div class="thumbnail">
                             <a href="projects/nasa/">
                                 <video class="image loading" src="images/covers/SUITS.mp4" autoplay loop muted playsinline></video>
-                                <div class="caption">2025 NASA S.U.I.T.S. <br>(Spacesuit User Interface Technologies for Students)</div>
+                                <div class="caption">NASA S.U.I.T.S. <br>(Spacesuit User Interface Technologies for Students)</div>
                              <div class="hover">
-                                    <span class="circle">
-                                        <span class="text">
-                                        NASA S.U.I.T.S.<br>
-                                        <span class="skill">ui/ux</span>
-                                        </span>
+                                 <span class="circle">
+                                    <span class="text">
+                                    2025-26<br>
+                                    <span class="skill">ui/ux</span>
+                                    </span>
                                     </span>
                             </div>
                             </a>
@@ -77,23 +76,22 @@
 
                 <div class="project filter-graphic filter-brand item">
                     <div class="grid-item" id="bristolsound">
+                        <div class="project-title">BRISTOL SOUND MUSIC FESTIVAL</div>
                         <div class="one-grid-text">
-                            <h3>Bristol Sound Music Festival</h3>
+                            <h3>identity</h3>
                             <p>
-                            BRISTOL SOUND is a three-day music festival dedicated to the experimental sounds of trip hop. Held in the pleasant warmth of Rättvik, Sweden July summers within the former limestone quarry turned arena, Dalhalla. The acoustic intimacy of the isolated stage allows for a range in transformative experiences and sounds.
-
-                             
+                            Bristol Sound is a three-day music festival dedicated to the experimental sounds of trip hop. Held in the pleasant warmth of Rättvik, Sweden July summers within the former limestone quarry turned arena, Dalhalla. The acoustic intimacy of the isolated stage allows for a range in transformative experiences and sounds.
                             </p>
-                            <p>(brand design) + (website design) + (promotional materials) + (merch design)</p>
+                            
                         </div>
                         <div class="thumbnail">
                             <a href="projects/bristolsound/">
                                 <img class="image loading" src="images/covers/bristolsound.png">
-                                <div class="caption">Bristol Sound Music Festival</div>
+                                <div class="caption">BRISTOL SOUND MUSIC FESTIVAL</div>
                             <div class="hover">
                                     <span class="circle">
                                         <span class="text">
-                                        Bristol Sound Music Festival<br>
+                                        2026<br>
                                         <span class="skill">brand design + website design</span>
                                         </span>
                                     </span>
@@ -106,22 +104,21 @@
 
                <div class="project filter-graphic filter-brand item">
                     <div class="grid-item" id="soul">
+                        <div class="project-title">BETTER WORLD X DESIGN 2025 SOUL CONFERENCE</div>
                         <div class="one-grid-text">
-                            <h3>Better World X Design 2025 Soul Conference</h3>
+                            <h3>identity</h3>
                             <p>
                             Soul is a conference hosted by Better World annually with a different theme each year. The 2025 conference gathered speakers to discuss interdisciplinary practices in design and their relation to the soul.
-                             
                             </p>
-                            <p>(brand design) + (website design) + (promotional materials) + (merch design)</p>
                         </div>
                         <div class="thumbnail">
                             <a href="projects/soul/">
                                 <img class="image loading" src="images/covers/soulcover.png">
-                                <div class="caption">Better World X Design 2025 Soul Conference</div>
+                                <div class="caption">BETTER WORLD X DESIGN 2025 SOUL CONFERENCE</div>
                             <div class="hover">
                                     <span class="circle">
                                         <span class="text">
-                                        Soul Conference<br>
+                                        2025<br>
                                         <span class="skill">brand design + website design</span>
                                         </span>
                                     </span>
@@ -133,51 +130,52 @@
 
                 <div class="project filter-research filter-brand item">
                     <div class="grid-item" id="qrcode">
+                        <div class="project-title">SCAN FOR ____________ CAMPAIGN</div>
                         <div class="one-grid-text">
-                            <h3>Scan for____________ Campaign</h3>
+                            <h3>web design + research</h3>
                             <p>
                             Technology comes in many complex forms and origins that must be questioned and investigated to avoid compliant control of society. The goal of this campaign is to achieve a more mindful society that encourages curiosity within the ethics of technology and the dissemination of information via “accessible” forms of design.
                             </p>
-                            <p>(brand design) + (website design)</p>
                         </div>
                         <div class="thumbnail">
                             <a href="projects/qrcode/">
                                 <video class="image loading" src="images/covers/Recording for Website.mov" autoplay loop muted playsinline></video>
-                                <div class="caption">Scan for____________ Campaign</div>
+                                <div class="caption">SCAN FOR ____________ CAMPAIGN</div>
                             <div class="hover">
                                     <span class="circle">
                                         <span class="text">
-                                        scan for_____ campaign<br>
+                                        2025<br>
                                         <span class="skill">brand design + website design</span>
                                         </span>
                                     </span>
                             </div>
                             </a>
                         </div>
-
                     </div>
                 </div>
 
-                <div class="project filter-brand filter-graphic item">
-                    <div class="grid-item" id="orientation">
+                <div class="project filter-research filter-graphic item">
+                    <div class="grid-item" id="2t">
+                        <div class="project-title">KOICHI SATO & CARIN GOLDBERG TIMELINE</div>
                         <div class="one-grid-text">
-                            <h3>Orientation</h3>
+                            <h3>publication design + research</h3>
                             <p>
-                            Brand identity design for the RISD class of 2030. Work in progress...
+                            This timeline demonstrates the seperate lives and achievements of two prolific designers, Koichi Sato and Carin Goldberg. Koichi Sato is known for his use of color and gradients to create a distinctive visual voice and Carin Goldberg is known for her album covers and creative use of typography.
                             </p>
                         </div>
                         <div class="thumbnail">
-                            <a href="">
-                                <img class="image loading" data-src="images/covers/orientation.png">
-                                <div class="caption">2026 RISD Orientation</div>
-                            </a>
+                            <a href="projects/k&c/">
+                                <img class="image loading" src="images/covers/2t.png">
+                                <div class="caption">KOICHI SATO & CARIN GOLDBERG TIMELINE</div>
                             <div class="hover">
-                                        <span class="circle">
+                                    <span class="circle">
                                         <span class="text">
-                                        in progress...<br>
+                                        2025<br>
+                                        <span class="skill">publication design + research</span>
                                         </span>
-                                        </span>
-                                    </div>
+                                    </span>
+                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -190,21 +188,21 @@
 
                  <div class="project filter-brand filter-graphic item">
                     <div class="grid-item" id="sensescapexmicrosoft">
+                        <div class="project-title">SENSESCAPE X MICROSOFT GARAGE</div>
                         <div class="one-grid-text">
-                            <h3>Sensescape x Microsoft Garage</h3>
+                            <h3>identity</h3>
                             <p>
                             Sensecape X Microsoft is an immersive conference hosted at  <a href="https://www.microsoft.com/en-us/garage/" target="_blank">Microsoft Garage in NYC↗</a> that gathers artists, designers, technologists, and thinkers reimagining interaction across disciplines, bodies, and realities.
                             </p>
-                            <p>(brand design) + (website design) + (exhibition design)</p>
                         </div>
                         <div class="thumbnail">
                             <a href="projects/sensescape/">
-                                <img class="image loading" data-src="images/covers/sensescape.gif">
-                                <div class="caption">Sensescape x Microsoft Garage</div>
+                                <img class="image loading" src="images/covers/sensescape.gif">
+                                <div class="caption">SENSESCAPE X MICROSOFT GARAGE</div>
                                 <div class="hover">
                                     <span class="circle">
                                     <span class="text">
-                                    Sensescape X Microsoft Garage<br>
+                                    2025<br>
                                     <span class="skill">branding + web design + exhibition design</span>
                                     </span>
                                     </span>
@@ -216,21 +214,21 @@
 
                 <div class="project filter-brand filter-graphic item">
                     <div class="grid-item" id="cocreate">
+                         <div class="project-title">COCREATE</div>
                         <div class="one-grid-text">
-                            <h3>Cocreate</h3>
+                            <h3>identity</h3>
                             <p>
                             Cocreate was designed with the intent to build a parent brand for Design Buddies and UXGO. This meant that the brand had to compliment both established brands while still maintaining a independent identity. Through this brand design, I decided to experiment with how the letters "co" can be designed to function as a visual and written logo.
                             </p>
-                            <p>(brand design) + (visual design)</p>
                         </div>
                         <div class="thumbnail">
                             <a href="projects/cocreate/">
-                                <img class="image loading" data-src="images/covers/cocreate3.png">
-                                <div class="caption">Cocreate</div>
+                                <img class="image loading" src="images/covers/cocreate3.png">
+                                <div class="caption">COCREATE</div>
                                 <div class="hover">
                                     <span class="circle">
                                     <span class="text">
-                                    cocreate<br>
+                                    2025<br>
                                     <span class="skill">brand identity + visual design </span>
                                     </span>
                                     </span>
@@ -240,29 +238,80 @@
                     </div>
                 </div>
 
+                <div class="project filter-brand filter-graphic item">
+                    <div class="grid-item" id="orientation">
+                        <div class="project-title">2026 RISD ORIENTATION</div>
+                        <div class="one-grid-text">
+                            <h3>identity</h3>
+                            <p>
+                            Brand identity design for the RISD class of 2030. Work in progress...
+                            </p>
+                        </div>
+                        <div class="thumbnail">
+                            <a href="">
+                                <video class="image loading" src="images/covers/orientation.mp4" autoplay loop muted playsinline></video>
+                                <div class="caption">2026 RISD ORIENTATION</div>
+                                <div class="hover">
+                                    <span class="circle">
+                                        <span class="text">
+                                            in progress...
+                                        </span>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="project filter-brand filter-uiux item">
                     <div class="grid-item" id="h@b">
+                         <div class="project-title">HACK @ BROWN</div>
                         <div class="one-grid-text">
-                            <h3>Hack @ Brown</h3>
+                            <h3>web design + identity</h3>
                             <p>
                             With the Hack@Brown design team, we designed the branding, website design, and promotional materials for the event.
                             <br>
-                            <a href="https://hackatbrown.org/" target="_blank">Hack @ Brown website ↗</a>
+                            <br><a href="https://hackatbrown.org/" target="_blank">Hack @ Brown website ↗</a>
                             </p>
-                            <p>(brand design) + (wayfinding) +  (3D modeling)</p>
                         </div>
                         <div class="thumbnail">
                             <a href="projects/hack@brown/">
                                 <video class="image loading" src="images/covers/hab.mov" autoplay loop muted playsinline></video>
-                                <div class="caption">Hack @ Brown</div>
+                                <div class="caption">HACK @ BROWN</div>
                                 <div class="hover">
                                     <span class="circle">
                                     <span class="text">
-                                    Hack @ Brown University<br>
+                                    2025-26<br>
                                     <span class="skill">brand identity + wayfinding + 3D modeling </span>
                                     </span>
                                     </span>
                                 </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project filter-research filter-graphic item">
+                    <div class="grid-item" id="2t">
+                        <div class="project-title">SPECTRAL INDEX</div>
+                        <div class="one-grid-text">
+                            <h3>brand identity + research</h3>
+                            <p>
+                            Spectral Index is a speculative brand that uses color to represent unconventional geophysical ways of perceiving large spaces and atmospheres through abstract visuals like color to extract meaning. Tied to depth and data, these colors differentiate by value and color to allow for distinct information visualization that allows for accessible understanding of complex systems. These colors were selected due to their uniqueness, distant from conventional heatmaps or weather graphic visualizations.
+                            </p>
+                        </div>
+                        <div class="thumbnail">
+                            <a href="projects/spectral-index/">
+                                <img class="image loading" src="images/covers/spectral-index.png">
+                                <div class="caption">SPECTRAL INDEX</div>
+                            <div class="hover">
+                                    <span class="circle">
+                                        <span class="text">
+                                        Spring 2026<br>
+                                        <span class="skill">brand identity + research</span>
+                                        </span>
+                                    </span>
+                            </div>
                             </a>
                         </div>
                     </div>
@@ -274,21 +323,21 @@
 
                 <div class="project filter-brand filter-graphic filter-uiux item ">
                     <div class="grid-item" id="useless-objects">
+                         <div class="project-title">USELESS OBJECTS</div>
                         <div class="one-grid-text">
-                            <h3>Useless Objects</h3>
+                            <h3>web design + package design</h3>
                             <p>
                             Useless Objects is a personal branding project with the intention of discovering humor or irritation in a viewer. Within this website, you can discover objects that are seemingly useless, or in other words, only for show. [2 months]
                             </p>
-                            <p>(brand identity) + (web design) + (package design)</p>
                         </div>
                         <div class="thumbnail">
                             <a href="projects/useless-objects/">
-                                <img class="image loading" data-src="images/covers/landing1.png">
-                                <div class="caption">Useless Objects</div>
+                                <img class="image loading" src="images/covers/landing1.png">
+                                <div class="caption">USELESS OBJECTS</div>
                                 <div class="hover">
                                     <span class="circle">
                                     <span class="text">
-                                    useless objects<br>
+                                    2025<br>
                                     <span class="skill">brand identity + web design + package design </span>
                                     </span>
                                     </span>
@@ -300,22 +349,22 @@
 
                 <div class="project filter-brand filter-uiux item ">
                     <div class="grid-item" id="src">
+                         <div class="project-title">SOCIALLY RESPONSIBLE COMPUTING (SRC) HANDBOOK FOR BROWN UNIVERSITY</div>
                         <div class="one-grid-text">
-                            <h3>Socially Responsible Computing (SRC) Handbook for Brown University</h3>
+                            <h3>web design + identity</h3>
                             <p>
                                 This Handbook is your guide to integrating ethics, responsibility, and social awareness into computer science teaching. Whether you're an instructor designing a syllabus, a TA leading discussions, or a student exploring what impact your work can have, this site offers curated modules, case studies, discussion prompts, and resource tools.
                             </p>
-                             <p><a href="https://srch.cs.brown.edu/" target="_blank"> SRCH Website↗</a></p>
-                            <p>(brand identity) + (web design) </p>
+                            <br><p><a href="https://srch.cs.brown.edu/" target="_blank"> SRCH Website ↗</a></p>
                         </div>
                         <div class="thumbnail">
                             <a href="projects/src/">
-                                <img class="image loading" data-src="images/covers/srchlogo.png">
-                                <div class="caption">Socially Responsible Computing (SRC) Handbook For Brown University</div>
+                                <img class="image loading" src="images/covers/srchlogo.png">
+                                <div class="caption">SOCIALLY RESPONSIBLE COMPUTING (SRC) HANDBOOK FOR BROWN UNIVERSITY</div>
                                 <div class="hover">
                                     <span class="circle">
                                     <span class="text">
-                                    socially responsible <br>computing handbook<br>
+                                    2025
                                     <span class="skill">web design + brand identity</span>
                                     </span>
                                     </span>
@@ -325,24 +374,50 @@
                     </div>
                 </div>
 
+                <div class="project filter-graphic item ">
+                    <div class="grid-item" id="notes">
+                         <div class="project-title">NOTES ON THE FOURTH DIMENSION</div>
+                        <div class="one-grid-text">
+                            <h3>publication design</h3>
+                            <p>
+                            A speculative editorial design of the essay, "Notes on the Fourth Dimension." [2 weeks]
+                            </p>
+                        </div>
+                        <div class="thumbnail">
+                            <a href="projects/notes/">
+                                <img class="image loading" src="images/covers/notes.png">
+                                <div class="caption">NOTES ON THE FOURTH DIMENSION</div>
+                                <div class="hover">
+                                    <span class="circle">
+                                    <span class="text">
+                                    2026<br>
+                                    <span class="skill">publication design </span>
+                                    </span>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="project filter-design filter-research item">
                     <div class="grid-item" id="keyboardsmash">
+                        <div class="project-title">KEYBOARD SMASH !</div>
                         <div class="one-grid-text">
-                            <h3>keyboard smash !</h3>
+                            <h3>research + conceptual data visualization + web design</h3>
                             <p>
                                 A series of keyboard smash visualizations translated from more than 70 collected keyboard smashes.
                             </p>
-                            <p><a href="https://anushkaparikhh.github.io/keyboard-smash/index.html" target="_blank"> Website↗</a></p>
-                            <p>(promotional materials) + (web design) + (research) + (conceptual data visualization)</p>
+                            <br><p><a href="https://anushkaparikhh.github.io/keyboard-smash/index.html" target="_blank"> Website ↗</a></p>
                         </div>
                         <div class="thumbnail">
                             <a href="projects/keyboard-smash/">
                                 <video class="image loading" src="images/covers/keys.mp4" autoplay loop muted playsinline></video>
-                                <div class="caption">keyboard smash !</div>
+                                <div class="caption">KEYBOARD SMASH !</div>
                                 <div class="hover">
                                     <span class="circle">
                                     <span class="text">
-                                    keyboard smash !<br>
+                                    2026<br>
                                     <span class="skill">web design + research + branding</span>
                                     </span>
                                     </span>
@@ -366,6 +441,7 @@
                     <div class="thumbnail">
                             <video class="image loading" src="images/covers/SUITS.mp4" autoplay loop muted playsinline></video>
                         </a>
+                         <div class="caption">NASA S.U.I.T.S. <br>(Spacesuit User Interface Technologies for Students)</div>
                     </div>
                 </div>
 
@@ -373,6 +449,7 @@
                     <div class="thumbnail">
                             <img class="image loading" src="images/covers/soulcover.png">
                         </a>
+                            <div class="caption">BETTER WORLD X DESIGN 2025 SOUL CONFERENCE</div>
                     </div>
                 </div>
         
@@ -380,6 +457,7 @@
                     <div class="thumbnail">
                          <video class="image loading" src="images/covers/Recording for Website.mov" autoplay loop muted playsinline></video>
                     </a>
+                    <div class="caption">SCAN FOR ____________ CAMPAIGN</div>
                     </div>
                 </div>
 
@@ -387,6 +465,7 @@
                     <div class="thumbnail">
                             <img class="image loading" data-src="images/covers/orientation.png">
                         </a>
+                        <div class="caption">2026 RISD ORIENTATION</div>
                     </div>
                 </div>
 
@@ -394,6 +473,7 @@
                     <div class="thumbnail">
                               <img class="image loading" data-src="images/covers/sensescape.gif">
                         </a>
+                        <div class="caption">SENSESCAPE X MICROSOFT GARAGE</div>
                     </div>
                 </div>
                 
@@ -401,6 +481,7 @@
                     <div class="thumbnail">
                         <img class="image loading" data-src="images/covers/cocreate3.png">
                         </a>
+                        <div class="caption">Cocreate</div>
                     </div>
                 </div>
 
@@ -408,6 +489,7 @@
                     <div class="thumbnail">
                          <video class="image loading" src="images/covers/hab.mov" autoplay loop muted playsinline></video>
                         </a>
+                        <div class="caption">HACK @ BROWN</div>
                     </div>
                 </div>
 
@@ -415,6 +497,7 @@
                     <div class="thumbnail">
                          <img class="image loading" data-src="images/covers/landing1.png">
                         </a>
+                        <div class="caption">USELESS OBJECTS</div>
                     </div>
                 </div>
 
@@ -422,6 +505,7 @@
                     <div class="thumbnail">
                           <img class="image loading" data-src="images/covers/srchlogo.png">
                         </a>
+                        <div class="caption">SOCIALLY RESPONSIBLE COMPUTING (SRC) HANDBOOK FOR BROWN UNIVERSITY</div>
                     </div>
                 </div>
 
@@ -429,6 +513,23 @@
                     <div class="thumbnail">
                            <video class="image loading" src="images/covers/keys.mp4" autoplay loop muted playsinline></video>
                         </a>
+                        <div class="caption">KEYBOARD SMASH !</div>
+                    </div>
+                </div>
+
+                <div class="grid-item" id="notes">
+                    <div class="thumbnail">
+                           <video class="image loading" src="images/covers/notes.png" autoplay loop muted playsinline></video>
+                        </a>
+                        <div class="caption">NOTES ON THE FOURTH DIMENSION</div>
+                    </div>
+                </div>
+
+                <div class="grid-item" id="notes">
+                    <div class="thumbnail">
+                           <img class="image loading" src="images/covers/2t.png">
+                        </a>
+                        <div class="caption">KOICHI SATO & CARIN GOLDBERG TIMELINE</div>
                     </div>
                 </div>
         
