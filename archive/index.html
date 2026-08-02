@@ -38,8 +38,17 @@
                     <div class="grid-item" id="121">
                         <div class="thumbnail">
                             <a>
-                                <img class="image loading" data-src="images/121.JPG">
+                                <img class="image loading" data-src="images/121.png">
                                 <div class="caption">[-121.815225, 5.877006] A sculpture capturing surveillance footage overlayed with the unfamiliarity of childhood memories.</div>
+                            </a>
+                        </div>
+                    </div>
+
+                     <div class="grid-item" id="gujju">
+                        <div class="thumbnail">
+                            <a>
+                                <img class="image loading" data-src="images/gujju.png">
+                                <div class="caption">A contemporary design for a gujarati typeface. </div>
                             </a>
                         </div>
                     </div>
@@ -87,18 +96,14 @@
                         </div>
                     </div>
 
-                    <div class="grid-item" id="notations">
+                    <!--<div class="grid-item" id="notations">
                         <div class="thumbnail">
                             <a>
                                 <video class="image loading" src="images/notations.mp4" autoplay loop muted playsinline></video>
                                 <div class="caption">A collection of graphic notations from various genres.</div>
                             </a>
                         </div>
-                    </div>
-        
-            </div>
-        
-            <div class="grid-column">
+                    </div>-->
 
                 <div class="grid-item" id="disc">
                         <div class="thumbnail">
@@ -108,6 +113,19 @@
                             </a>
                         </div>
                 </div>
+        
+            </div>
+        
+            <div class="grid-column">
+
+                <div class="grid-item" id="motion">
+                        <div class="thumbnail">
+                            <a>
+                                <video class="image loading" src="images/experiment.mp4" autoplay loop muted playsinline></video>
+                                <div class="caption">A motion study inspired by Erica Anderson.</div>
+                            </a>
+                        </div>
+                    </div>
 
                 <div class="grid-item" id="glyphs">
                         <div class="thumbnail">
@@ -121,7 +139,7 @@
                 <div class="grid-item" id="collar">
                         <div class="thumbnail">
                             <a>
-                                <img class="image loading" src="images/collar.JPG" >
+                                <img class="image loading" src="images/collar.png" >
                                 <div class="caption">A wearable collar amplifying the voice of the invisible labor of an unwittable reCAPTCHA worker.</div>
                             </a>
                         </div>
@@ -217,6 +235,31 @@
         <div style="height: 50px;"></div> 
     </div>
 </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const details = document.querySelector('.details');
+        const sub = document.querySelector('.sub');
+
+        if (!details || !sub) return;
+
+        function handleScroll() {
+            if (window.scrollY > 35) {
+                details.classList.add('blur-and-hide');
+                sub.classList.add('blur-and-hide');
+            } else {
+                details.classList.remove('blur-and-hide');
+                sub.classList.remove('blur-and-hide');
+            }
+        }
+
+        if (window.innerWidth >= 490) {
+            window.addEventListener('scroll', handleScroll);
+        }
+
+        handleScroll();
+    });
+</script>
 
 <!-- Modal Lightbox -->
 <div class="modal-overlay" id="modalOverlay">

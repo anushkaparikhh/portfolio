@@ -125,6 +125,10 @@ body {
     transition: .8s;
 }
 
+.blur-and-hide {
+    filter: blur(6px);
+    opacity: 0;
+}
 
 .bio {
     padding: 0;
